@@ -1,6 +1,7 @@
-const page = () => {
+const page = ({params}) => {
+  console.log(params)
   return (
-    <div>post page</div>
+    <div>post page{params.id}</div>
   )
 }
 export default page
